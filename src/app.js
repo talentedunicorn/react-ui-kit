@@ -1,7 +1,7 @@
 import React from "react"
-import Button from "../ui-kit/dist/button.js"
-import Heading from "../ui-kit/dist/heading.js"
-import Hero from "../ui-kit/dist/hero.js"
+import Button from "../ui-kit/dist/dev/button.js"
+import Heading from "../ui-kit/dist/dev/heading.js"
+import Hero from "../ui-kit/dist/dev/hero.js"
 
 const ContainerStyles = {
   maxWidth: `var(--max-width)`,

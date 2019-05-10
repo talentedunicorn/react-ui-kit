@@ -7,12 +7,13 @@ import postcss from 'rollup-plugin-postcss'
 import registeredComponents from './registeredComponents'
 
 const NODE_ENV = process.env.NODE_ENV || "development"
+const outputDir = NODE_ENV === "development" ? "dist/dev": "dist/prod"
 
 export default {
   input: registeredComponents,
   output: {
-    filename: "[name].js",
-    dir: "dist",
+    filename: "[name].[ext]",
+    dir: outputDir,
     format: "cjs"
   },
   plugins: [
