@@ -6,7 +6,8 @@ module.exports = {
       path.join(__dirname, 'public'),
       path.join(__dirname, 'dist')
     ],
-    hot: true
+    hot: true,
+    watchContentBase: true
   },
   module: {
     rules: [
