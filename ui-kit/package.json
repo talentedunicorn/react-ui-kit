@@ -2,7 +2,7 @@
   "name": "talentedunicorn-ui-kit",
   "version": "0.1.4",
   "main": "src/index.js",
-  "module": "src/index.js",
+  "module": "dist/prod/index.js",
   "license": "MIT",
   "scripts": {
     "prePublishOnly": "npm run release",
