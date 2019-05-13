@@ -1,5 +1,6 @@
 import React from "react"
-import { Button, Heading, Hero } from "talentedunicorn-ui-kit"
+// import { Button, Heading, Hero } from "talentedunicorn-ui-kit" // For latest stable
+import { Button, Heading, Hero } from "../ui-kit/dist/dev/index.js" // For development
 
 const ContainerStyles = {
   maxWidth: `var(--max-width)`,
