@@ -2,8 +2,8 @@
 > Small UI kit built on ReactJs
 
 ## Usage
-Install `yarn add talentdunicorn-ui-kit`
-Include in your project `import { [Component Name] } from "talentedunicorn-ui-kit"`
+- Install `yarn add talentdunicorn-ui-kit`
+- Include in your project `import { [Component Name] } from "talentedunicorn-ui-kit"`
 
 ## Components
 - Button
