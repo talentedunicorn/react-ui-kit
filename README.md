@@ -25,5 +25,5 @@ From the project root run `yarn start`
       - heading.js
 
 ## Todo
-- [ ] Publish components to npm
+- [x] Publish components to npm
 - [ ] Add storybook and use components
