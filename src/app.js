@@ -10,13 +10,15 @@ const ContainerStyles = {
   padding: `var(--space)`
 }
 
+const fakeClickHandler = (e) => console.log('I has been clicked', e)
+
 const App = () => 
   <>
     <Hero background="hsl(21, 66%, 76%)">
       <div style={{padding: `calc(var(--space) * 2)` }}>
         <Heading level={1} text="UI Kit" />
         <Heading level={3} text="Building UI Kit with React using RollUp.js" />
-        <Button>Get started &nbsp;<span role="img" aria-label="unicorn">🦄</span></Button>
+        <Button handleClick={fakeClickHandler}>Get started &nbsp;<span role="img" aria-label="unicorn">🦄</span></Button>
       </div>
     </Hero>
 
@@ -32,10 +34,10 @@ const App = () =>
 
       <section style={{ marginBottom: `calc(var(--space) * 4)` }}>
         <Heading level={4} text="Buttons" underlined={true}/>
-        <Button>Default</Button>
-        <Button disabled={true}>Disabled button</Button>
-        <Button type="hollow"><span role="img" aria-label="fire">🔥</span>buttons</Button>
-        <Button disabled={true} type="hollow">Disabled button</Button>
+        <Button handleClick={fakeClickHandler}>Default</Button>
+        <Button disabled={true} handleClick={fakeClickHandler}>Disabled button</Button>
+        <Button type="hollow" handleClick={fakeClickHandler}><span role="img" aria-label="fire">🔥</span>buttons</Button>
+        <Button disabled={true} handleClick={fakeClickHandler} type="hollow">Disabled button</Button>
       </section>
     </div>
   </>
