@@ -4,7 +4,7 @@ import ButtonStyles from "./button.module.css"
 
 import PropTypes from "prop-types"
 
-const buttonTypes = ['hollow', 'error']
+const buttonTypes = ['hollow']
 
 const Button = props =>  {
 

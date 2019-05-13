@@ -1,9 +1,11 @@
 {
-  "name": "ui-kit",
-  "version": "1.0.0",
+  "name": "talentedunicorn-ui-kit",
+  "version": "0.1.2",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "prePublishOnly": "npm run release",
+    "release": "npm run build:dev && npm run build:prod",
     "build:dev": "NODE_ENV=development rollup -c",
     "build:prod": "NODE_ENV=production rollup -c",
     "watch": "NODE_ENV=development rollup -c -w src"
