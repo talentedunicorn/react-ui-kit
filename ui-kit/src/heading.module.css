@@ -17,3 +17,8 @@
 .H5 {
   font-size: 1.2rem;
 }
+
+.underlined {
+  padding-bottom: 0.5em;
+  border-bottom: 3px solid currentColor;
+}
