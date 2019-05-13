@@ -8,6 +8,11 @@ const ContainerStyles = {
   padding: `var(--space)`
 }
 
+const customHeadingStyles = {
+  textTransform: `uppercase`,
+  letterSpacing: `var(--letter-space)`
+}
+
 const fakeClickHandler = (e) => console.log('I has been clicked', e)
 
 const App = () => 
@@ -15,14 +20,18 @@ const App = () =>
     <Hero background="hsl(21, 66%, 76%)">
       <div style={{padding: `calc(var(--space) * 2)` }}>
         <Heading level={1} text="UI Kit" />
-        <Heading level={3} text="Building UI Kit with React using RollUp.js" />
-        <Button handleClick={fakeClickHandler}>Get started &nbsp;<span role="img" aria-label="unicorn">🦄</span></Button>
+        <p>A small UI Kit of React components</p>
+
+        <Heading level={4} text="Getting started" underlined={true} />
+        <pre>npm install talentedunicorn-ui-kit</pre>
+        <p>Or on Yarn</p>
+        <pre>yarn add talentedunicorn-ui-kit</pre>
       </div>
     </Hero>
 
     <div style={ContainerStyles}>
       <section style={{ marginBottom: `calc(var(--space) * 4)` }}>
-        <Heading level={4} text="Headings" underlined={true}/>
+        <Heading level={5} text="Headings" underlined={true} style={customHeadingStyles}/>
         <Heading level={1} text="Heading level 1"/>
         <Heading level={2} text="Heading level 2"/>
         <Heading level={3} text="Heading level 3"/>
@@ -31,7 +40,7 @@ const App = () =>
       </section>
 
       <section style={{ marginBottom: `calc(var(--space) * 4)` }}>
-        <Heading level={4} text="Buttons" underlined={true}/>
+        <Heading level={5} text="Buttons" underlined={true} style={customHeadingStyles}/>
         <Button handleClick={fakeClickHandler}>Default</Button>
         <Button disabled={true} handleClick={fakeClickHandler}>Disabled button</Button>
         <Button type="hollow" handleClick={fakeClickHandler}><span role="img" aria-label="fire">🔥</span>buttons</Button>
