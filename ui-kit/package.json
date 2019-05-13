@@ -1,9 +1,9 @@
 {
   "name": "talentedunicorn-ui-kit",
-  "version": "0.1.4",
-  "main": "dist/prod/index.js",
+  "version": "0.1.6",
+  "main": "index.js",
   "module": "dist/prod/index.js",
-  "files": ["dist", "README.md"],
+  "files": ["dist", "README.md", "package.json"],
   "license": "MIT",
   "scripts": {
     "prePublishOnly": "npm run release",
