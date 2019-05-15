@@ -1,21 +1,23 @@
-.H1 {
-  font-size: 3rem;
-}
+@media (orientation: landscape) and (min-device-aspect-ratio: 1/1) {
+  .H1 {
+    font-size: 3rem;
+  }
 
-.H2 {
-  font-size: 2.5rem;
-}
+  .H2 {
+    font-size: 2.5rem;
+  }
 
-.H3 {
-  font-size: 1.94rem;
-}
+  .H3 {
+    font-size: 1.94rem;
+  }
 
-.H4 {
-  font-size: 1.56rem;
-}
+  .H4 {
+    font-size: 1.56rem;
+  }
 
-.H5 {
-  font-size: 1.2rem;
+  .H5 {
+    font-size: 1.2rem;
+  }
 }
 
 .underlined {
