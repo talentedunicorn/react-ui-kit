@@ -1,0 +1,18 @@
+.default {
+  margin: 0;
+  padding-left: var(--space);
+}
+
+.default li {
+  padding: calc(var(--space) / 4);
+}
+
+.List {
+  composes: default;
+}
+
+.minimal {
+  composes: default;
+  list-style: none;
+  padding: 0;
+}

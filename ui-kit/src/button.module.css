@@ -6,7 +6,7 @@
   color: var(--button-color);
   border: var(--border-width, 3px) solid var(--button-border);
   border-radius: var(--border-radius);
-  padding: var(--space);
+  padding: calc(var(--space) / 2) var(--space);
   margin: var(--space) 0;
   font-weight: bold;
   font-size: 1.2em;
