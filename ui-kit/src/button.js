@@ -19,6 +19,7 @@ const Button = props =>  {
   }
 
   return <button 
+    style={props.style}
     className={style} 
     disabled={props.disabled}
     onClick={(e) => props.handleClick(e)}>{ props.children }</button>
@@ -27,6 +28,7 @@ const Button = props =>  {
 Button.propTypes = {
   type: PropTypes.oneOf(buttonTypes),
   handleClick: PropTypes.func.isRequired,
-  disabled: PropTypes.bool
+  disabled: PropTypes.bool,
+  style: PropTypes.style
 }
 export default Button

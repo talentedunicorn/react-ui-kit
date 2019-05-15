@@ -14,15 +14,16 @@ const List = props => {
   }
 
   if (props.ordered) {
-    return <ol className={styles}>{props.children}</ol>
+    return <ol style={props.style} className={styles}>{props.children}</ol>
   }
 
-  return <ul className={styles}>{props.children}</ul>
+  return <ul style={props.style} className={styles}>{props.children}</ul>
 }
 
 List.propTypes = {
   ordered: PropTypes.bool,
   minimal: PropTypes.bool,
+  styles: PropTypes.object
 }
 
 export default List

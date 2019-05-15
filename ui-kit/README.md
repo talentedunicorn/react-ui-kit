@@ -10,12 +10,12 @@
   - `handleClick`: Function to handle click events *Required*
   - `type`: Sets the type, currently supported `["hollow"]`
 - Hero
-  - `background`: URL or any supported [CSS background value](https://developer.mozilla.org/en-US/docs/Web/CSS/background)
-  - `minHeight`: a height value
+  - `background`: `string` URL or any supported [CSS background value](https://developer.mozilla.org/en-US/docs/Web/CSS/background)
+  - `minHeight`: `string` a height value
 - Heading
-  - `level`: A number in the range of `1-5`
-  - `text`: A string text for the heading
-  - `underlined`: A boolean to displayed underlined headings 
+  - `level`: `number` in the range of `1-5`
+  - `text`: `string` text for the heading
+  - `underlined`: `boolean` To display underlined headings 
 - List
-  - `ordered`: For an ordered list
-  - `minimal`: Removes list styles
+  - `ordered`: `boolean` For an ordered list
+  - `minimal`: `boolean` Removes list styles
