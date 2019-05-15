@@ -38,6 +38,8 @@ const App = () =>
         <Heading level={3} text="Heading level 3"/>
         <Heading level={4} text="Heading level 4"/>
         <Heading level={5} text="Heading level 5"/>
+
+        <Heading level={1} text="Underlined heading" underlined={true}/>
       </section>
 
       <section style={{ marginBottom: `calc(var(--space) * 4)` }}>
