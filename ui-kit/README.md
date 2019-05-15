@@ -16,3 +16,6 @@
   - `level`: A number in the range of `1-5`
   - `text`: A string text for the heading
   - `underlined`: A boolean to displayed underlined headings 
+- List
+  - `ordered`: For an ordered list
+  - `minimal`: Removes list styles
