@@ -29,6 +29,6 @@ Button.propTypes = {
   type: PropTypes.oneOf(buttonTypes),
   handleClick: PropTypes.func.isRequired,
   disabled: PropTypes.bool,
-  style: PropTypes.style
+  style: PropTypes.object
 }
 export default Button

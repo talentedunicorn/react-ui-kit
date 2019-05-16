@@ -23,7 +23,7 @@ const List = props => {
 List.propTypes = {
   ordered: PropTypes.bool,
   minimal: PropTypes.bool,
-  styles: PropTypes.object
+  style: PropTypes.object
 }
 
 export default List

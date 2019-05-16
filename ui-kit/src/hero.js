@@ -7,14 +7,16 @@ const Hero = props =>
     className={HeroStyles.Hero}
     style={{
       background: props.background,
-      minHeight: props.minHeight
+      minHeight: props.minHeight,
+      ...props.style
     }}>
     {props.children}
   </section>
 
 Hero.propTypes = {
   background: PropTypes.string,
-  minHeight: PropTypes.string
+  minHeight: PropTypes.string,
+  style: PropTypes.object
 }
 
 export default Hero
