@@ -1,4 +1,11 @@
-.UIKit {
+pre {
+  background: var(--gray-light);
+  padding: calc(var(--space) / 2);
+  border-radius: var(--border-radius);
+  color: var(--primary);
+}
+
+.UIKit-hero {
   padding: calc(var(--space) * 2);
   padding-top: calc(var(--space) * 5);
 }
@@ -10,16 +17,24 @@
   padding: var(--space);
 }
 
-.Container > section {
-  margin-bottom: calc(var(--space) * 4); 
+.align-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Section {
+  padding-bottom: calc(var(--space) * 4); 
+  border-bottom: 1px solid var(--gray-light);
 }
 
 .cool-heading {
   letter-spacing: var(--letter-space);
+  margin: calc(var(--space) * 6) 0 var(--space);
+  color: var(--gray);
 }
 
 .cool-heading:before {
-  content: "👉";
+  content: "👉 ";
 }
 
 .custom-heading {
@@ -31,7 +46,6 @@
 }
 
 .dope {
-  
   --cool-gradient: linear-gradient(69deg, hsl(285, 46%, 26%), hsl(12, 71%, 54%));
   --button-border: var(--cool-gradient);
   background-image: var(--cool-gradient);
