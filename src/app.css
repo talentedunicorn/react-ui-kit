@@ -15,12 +15,18 @@
 }
 
 .cool-heading {
-  text-transform: uppercase;
   letter-spacing: var(--letter-space);
+}
+
+.cool-heading:before {
+  content: "👉";
 }
 
 .custom-heading {
   font-size: 5rem;
+}
+
+.custom-heading:hover {
   filter: blur(5px);
 }
 

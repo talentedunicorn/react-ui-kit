@@ -23,9 +23,9 @@ const App = () =>
       <pre>yarn add talentedunicorn-ui-kit</pre>
     </Hero>
 
-    <div className="Container">
-      <section>
-        <Heading level={2} text="Headings" underlined={true} className="cool-heading"/>
+    <main>
+      <section className="Container">
+        <Heading level={2} text="Headings" className="cool-heading"/>
         <Heading level={1} text="Heading level 1"/>
         <Heading level={2} text="Heading level 2"/>
         <Heading level={3} text="Heading level 3"/>
@@ -33,10 +33,11 @@ const App = () =>
         <Heading level={5} text="Heading level 5"/>
 
         <Heading level={1} text="Large custom heading" className="custom-heading" />
+        <Heading level={1} underlined={true} text="Underlined heading"/>
       </section>
 
-      <section>
-        <Heading level={2} text="Buttons" underlined={true} className="cool-heading"/>
+      <section className="Container">
+        <Heading level={2} text="Buttons" className="cool-heading"/>
         <Button handleClick={fakeClickHandler}>Default</Button>
         <Button disabled={true} handleClick={fakeClickHandler}>Disabled button</Button>
         <Button type="hollow" handleClick={fakeClickHandler}>Hollow buttons</Button>
@@ -45,8 +46,8 @@ const App = () =>
         <Button className="dope" handleClick={fakeClickHandler}><span role="img" aria-label="fire">🔥</span>Dope ass button</Button>
       </section>
 
-      <section>
-        <Heading level={2} text="Lists" underlined={true} className="cool-heading"/>
+      <section className="Container">
+        <Heading level={2} text="Lists" className="cool-heading"/>
         <Heading level={3} text="Default" className="cool-heading"/>
         <List>
           <li>Robert the Great</li>
@@ -70,12 +71,15 @@ const App = () =>
       </section>
 
       <section>
-        <Heading level={2} text="Hero" underlined={true} className="cool-heading"/>
-        <Hero background="url(https://images.unsplash.com/photo-1556742205-e10c9486e506?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80) no-repeat bottom center/cover" minHeight="40vh">
-          <Heading level={1} text="This is a Hero component" />
+        <div className="Container">
+          <Heading level={2} text="Hero" className="cool-heading"/>
+        </div>
+        <Hero color="var(--white)" background="linear-gradient(hsla(0, 0%, 3%, 0.8), transparent), url(https://images.unsplash.com/photo-1562679452-763edf60a0b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80) no-repeat center center/cover" minHeight="40vh">
+          <Heading level={1} text="We (k)Need you" />
+          <Heading level={3} text="Do more for your business." />
         </Hero>
       </section>
-    </div>
+    </main>
   </>
 
 export default App
