@@ -9,7 +9,7 @@ const Hero = props =>
     style={{
       background: props.background,
       minHeight: props.minHeight,
-      ...props.style
+      color: props.color
     }}>
     {props.children}
   </section>
@@ -17,7 +17,7 @@ const Hero = props =>
 Hero.propTypes = {
   background: PropTypes.string,
   minHeight: PropTypes.string,
-  style: PropTypes.object
+  color: PropTypes.string
 }
 
 export default Hero

@@ -11,6 +11,7 @@
   - `type`: Sets the type, currently supported `["hollow"]`
 - Hero
   - `background`: `string` URL or any supported [CSS background value](https://developer.mozilla.org/en-US/docs/Web/CSS/background)
+  - `color`: `string` a color value
   - `minHeight`: `string` a height value
 - Heading
   - `level`: `number` in the range of `1-5`
