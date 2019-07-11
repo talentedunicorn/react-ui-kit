@@ -1,6 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import ButtonStyles from "./button.module.css"
+import cx from 'classnames'
 
 import PropTypes from "prop-types"
 
@@ -20,7 +21,7 @@ const Button = props =>  {
 
   return <button 
     style={props.style}
-    className={style} 
+    className={cx(style, props.className)} 
     disabled={props.disabled}
     onClick={(e) => props.handleClick(e)}>{ props.children }</button>
 }

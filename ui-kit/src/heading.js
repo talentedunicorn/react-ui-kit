@@ -11,6 +11,7 @@ const Heading = props => {
       return <h1 
         style={{...props.style}} 
         className={cx(
+          props.className,
           HeadingStyles.H1,
           {[HeadingStyles.underlined]: props.underlined}
         )}>{props.text}</h1>
@@ -18,6 +19,7 @@ const Heading = props => {
       return <h2 
         style={{...props.style}} 
         className={cx(
+          props.className,
           HeadingStyles.H2,
           {[HeadingStyles.underlined]: props.underlined}
         )}>{props.text}</h2>
@@ -25,6 +27,7 @@ const Heading = props => {
       return <h3 
         style={{...props.style}} 
         className={cx(
+          props.className,
           HeadingStyles.H3,
           {[HeadingStyles.underlined]: props.underlined}
         )}>{props.text}</h3>
@@ -32,6 +35,7 @@ const Heading = props => {
       return <h4 
         style={{...props.style}} 
         className={cx(
+          props.className,
           HeadingStyles.H4,
           {[HeadingStyles.underlined]: props.underlined}
         )}>{props.text}</h4>
@@ -39,6 +43,7 @@ const Heading = props => {
       return <h5 
         style={{...props.style}} 
         className={cx(
+          props.className,
           HeadingStyles.H5,
           {[HeadingStyles.underlined]: props.underlined}
         )}>{props.text}</h5>

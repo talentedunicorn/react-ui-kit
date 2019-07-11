@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import cx from "classnames"
 
 import ListStyles from "./list.module.css"
 
@@ -14,10 +15,10 @@ const List = props => {
   }
 
   if (props.ordered) {
-    return <ol style={props.style} className={styles}>{props.children}</ol>
+    return <ol style={props.style} className={cx(styles, props.className)}>{props.children}</ol>
   }
 
-  return <ul style={props.style} className={styles}>{props.children}</ul>
+  return <ul style={props.style} className={cx(styles, props.className)}>{props.children}</ul>
 }
 
 List.propTypes = {
