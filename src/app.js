@@ -16,7 +16,7 @@ const App = () =>
       <p>A small UI Kit of React components</p>
 
     </Hero>
-    <main>
+    <main className="UIKit-content">
       <section className="Container section">
         <Heading level={2} text="Getting started" className="cool-heading" />
         <pre>npm install talentedunicorn-ui-kit</pre>
@@ -99,11 +99,17 @@ const App = () =>
               <li>Even deliver your food</li>
             </List>
 
-            <Button type="hollow" handleClick={() => alert('Call me maybe 🤙')}>Get in touch</Button>
+            <Button handleClick={() => alert('Call me maybe 🤙')}>Get in touch</Button>
           </div>
         </Hero>
       </section>
     </main>
+    <footer className="UIKit-footer">
+      <div className="Container">
+        <p>Made by <a href="//talentedunicorn.com" rel="noreferrer noopener">TalentedUnicorn</a></p>
+        <a href="https://github.com/talentedunicorn/react-ui-kit" rel="noreferrer noopener">View on Github</a>
+      </div>
+    </footer>
   </>
 
 export default App
